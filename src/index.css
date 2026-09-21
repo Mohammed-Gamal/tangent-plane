@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07110f;
+  --foreground: #f3f7f5;
+  --card: #0d1b18;
+  --card-foreground: #f3f7f5;
+  --popover: #10201c;
+  --popover-foreground: #f3f7f5;
+  --primary: #b9f55e;
+  --primary-foreground: #102008;
+  --secondary: #163028;
+  --secondary-foreground: #e5f4ed;
+  --muted: #13241f;
+  --muted-foreground: #93a7a0;
+  --accent: #1b3d32;
+  --accent-foreground: #f3f7f5;
+  --destructive: #ff6b6b;
+  --border: #284139;
+  --input: #203931;
+  --ring: #b9f55e;
+  --chart-1: #b9f55e;
+  --chart-2: #43dbc1;
+  --chart-3: #f6b455;
+  --chart-4: #77a7ff;
+  --chart-5: #e88cff;
+  --radius: 0.9rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 5px);
+  --radius-md: calc(var(--radius) - 3px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--background); }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 78% 16%, rgb(49 128 102 / 16%), transparent 30rem),
+    radial-gradient(circle at 8% 90%, rgb(185 245 94 / 8%), transparent 25rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+button, input { font: inherit; }
+::selection { background: rgb(185 245 94 / 28%); }
+input[type="number"]::-webkit-inner-spin-button { opacity: .45; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
