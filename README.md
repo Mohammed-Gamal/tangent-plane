@@ -2,6 +2,8 @@
 
 This is a fully standalone React/Vite project. It does **not** require OpenAI Sites, OpenAI hosting, Cloudflare, Wrangler, authentication, environment variables, or an API key.
 
+**Try it online:** https://mohammed-gamal.github.io/tangent-plane/
+
 ## Requirements
 
 - Node.js 22.12 or newer
